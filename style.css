@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-color: #d0d0d0;
+}
+
+.main .nav {
+  height: 110px;
+  width: 100%;
+  /* background-color: cornflowerblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.nav-part-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .nav img {
+  height: 80px;
+  width: auto;
+  margin-right: 90px;
+  cursor: pointer;   
+  /* new prpty i learned*/
+}
+
+.nav-part-1 ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+ 
+}
+ul li { 
+   margin-right: 40px;
+   font-weight: 500;
+   font: 20px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+ul li:hover{
+    color: white;
+}
+
+.nav-part-2 i{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.nav-part-2 i:hover{
+    color: white;
+}
+
+.content{
+    height: calc(100% - 110px);
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.content .content-left{
+    height: auto;
+    width: 250px;
+    margin: 100px 10px 10px 150px;
+
+
+}
+
+.content-left h5{
+    color: rgb(66, 66, 66);
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.content-left button{
+    background-color: black;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 12px 40px;
+    border-radius: 100px;
+    outline:none;
+    border-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-top-left-radius: 0;
+}
+
+button:hover{
+background-color: #eeeeee;
+color: black;
+
+}
+
+
+.content-right{
+height: 100%;
+width: 60%;
+padding: 110px 100px;
+white-space: nowrap;
+overflow-x: auto;
+}
+
+.content-right::-webkit-scrollbar{
+  display: none;
+}
+
+.content-right .prdt1{
+height: 370px;
+width: 250px;
+background-color: #1011;
+position: relative;
+box-shadow: 0 5px 10px rgba(17, 0, 17, 0.301);
+display: inline-block;
+margin-right: 20px;
+}
+    
+.prdt1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    bottom: 20%;
+}
+
+.prdt1 h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    position: absolute;
+    bottom: 28%;
+}
+
+.category{
+    position: absolute;
+    bottom: 20%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.Color{
+    position: absolute;
+    bottom: 15%;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.price{
+    font: 18px;
+    position: absolute;
+    bottom: 5%;
+    font-weight: 600;
+    text-transform: capitalize;
+}
